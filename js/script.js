@@ -9,7 +9,7 @@ const translations = {
   "Marwin · Astana": ["Marwin · Астана", "Marwin · Астана"], "More than": ["Больше, чем", "Кітап дүкенінен де"], "a": ["", ""], "bookshop": ["книжный магазин", "кең"], "Books, toys, stationery and sweets — a little bit of everything for your day.": ["Книги, игрушки, канцтовары и сладости — всё нужное в одном месте.", "Кітаптар, ойыншықтар, кеңсе тауарлары мен тәттілер — күнделікті қажеттінің бәрі."],
   "Shop all": ["Смотреть товары", "Тауарларды көру"], "About Marwin": ["О Marwin", "Marwin туралы"], "Find something for everyone": ["Найдётся что-то для каждого", "Әркімге керегін табуға болады"], "A good place": ["У нас можно", "Бізде"], "to browse": ["выбрать покупку", "таңдау жасауға болады"], "A bit of everything": ["Всего понемногу", "Әр нәрседен бар"], "Shop by": ["Покупки по", "Санат бойынша"], "category": ["категориям", "таңдау"], "Books": ["Книги", "Кітаптар"], "Stories and ideas": ["Истории и идеи", "Әңгімелер мен идеялар"], "Toys": ["Игрушки", "Ойыншықтар"], "Playtime favourites": ["Для весёлых игр", "Ойынға арналған"], "Stationery": ["Канцтовары", "Кеңсе тауарлары"], "Things for school and work": ["Для учёбы и работы", "Оқу мен жұмысқа"], "Sweets": ["Сладости", "Тәттілер"], "A little treat": ["Небольшое угощение", "Шағын тәтті"],
   "Around the store": ["В магазине", "Дүкенде"], "Popular": ["Популярное", "Танымал тауарлар"], "right now": ["сейчас", "қазір"], "See everything": ["Смотреть всё", "Барлығын көру"], "The Little Prince": ["Маленький принц", "Кішкентай ханзада"], "Book · Antoine de Saint-Exupéry": ["Книга · Антуан де Сент-Экзюпери", "Кітап · Антуан де Сент-Экзюпери"], "Soft Teddy Bear": ["Мягкий мишка", "Жұмсақ қонжық"], "Toy · Soft and cuddly": ["Игрушка · мягкий и приятный", "Ойыншық · жұмсақ әрі сүйкімді"], "A5 Notebook": ["Блокнот A5", "A5 дәптері"], "Lined pages": ["В линейку", "Жолды беттер"], "Milk Chocolate": ["Молочный шоколад", "Сүтті шоколад"], "Sweets · 90 g": ["Сладость · 90 г", "Тәтті · 90 г"],
-  "A good book can make": ["Хорошая книга может", "Жақсы кітап"], "an ordinary day feel different.": ["изменить обычный день.", "кәдімгі күнді өзгерте алады."], "From Google Books": ["Из Google Books", "Google Books ұсынған"], "Something": ["Что-то", "Оқуға арналған"], "new": ["новое", "жаңа"], "to read": ["для чтения", ""], "Try another set ↻": ["Обновить подборку ↻", "Басқа кітаптарды көру ↻"], "Loading a few books...": ["Загружаем книги…", "Кітаптар жүктелуде…"], "Occasional book news": ["Новости о книгах", "Кітап жаңалықтары"], "Notes from": ["Новости от", "Жаңалықтар"], "Marwin": ["Marwin", "Marwin"], "New books and a few reading ideas, sent once in a while.": ["Новые книги и идеи для чтения — иногда присылаем самое интересное.", "Жаңа кітаптар мен оқу идеялары — анда-санда жіберіп тұрамыз."], "Email address": ["Электронная почта", "Электрондық пошта"], "Sign me up": ["Подписаться", "Жазылу"], "Books, toys and more.": ["Книги, игрушки и не только.", "Кітаптар, ойыншықтар және тағы басқалар."], "© 2026 Marwin · Astana": ["© 2026 Marwin · Астана", "© 2026 Marwin · Астана"],
+  "A good book can make": ["Хорошая книга может", "Жақсы кітап"], "an ordinary day feel different.": ["изменить обычный день.", "кәдімгі күнді өзгерте алады."], "From Google Books": ["Из Google Books", "Google Books ұсынған"], "Book picks from Open Library": ["Книги из Open Library", "Open Library кітаптары"], "Something": ["Что-то", "Оқуға арналған"], "new": ["новое", "жаңа"], "to read": ["для чтения", ""], "Try another set ↻": ["Обновить подборку ↻", "Басқа кітаптарды көру ↻"], "Loading a few books...": ["Загружаем книги…", "Кітаптар жүктелуде…"], "Occasional book news": ["Новости о книгах", "Кітап жаңалықтары"], "Notes from": ["Новости от", "Жаңалықтар"], "Marwin": ["Marwin", "Marwin"], "New books and a few reading ideas, sent once in a while.": ["Новые книги и идеи для чтения — иногда присылаем самое интересное.", "Жаңа кітаптар мен оқу идеялары — анда-санда жіберіп тұрамыз."], "Email address": ["Электронная почта", "Электрондық пошта"], "Sign me up": ["Подписаться", "Жазылу"], "Books, toys and more.": ["Книги, игрушки и не только.", "Кітаптар, ойыншықтар және тағы басқалар."], "© 2026 Marwin · Astana": ["© 2026 Marwin · Астана", "© 2026 Marwin · Астана"],
   "Books, toys and more": ["Книги, игрушки и не только", "Кітаптар, ойыншықтар және тағы басқалар"], "Browse the store by category, or search for something specific.": ["Выберите категорию или найдите конкретный товар.", "Санатты таңдаңыз немесе нақты тауарды іздеңіз."], "⌕": ["⌕", "⌕"], "Everything": ["Все товары", "Барлық тауар"], "Books, gifts and everyday finds.": ["Книги, подарки и товары на каждый день.", "Кітаптар, сыйлықтар және күнделікті тауарлар."], "Take a look": ["Посмотрите", "Тауарларды қараңыз"], "Shop": ["Магазин", "Дүкен"], "Browse the store": ["Перейти в магазин", "Дүкенге өту"], "About us": ["О магазине", "Дүкен туралы"], "More than": ["Больше, чем", "Кітап дүкенінен де"], "Marwin is a store in Astana with books, toys, stationery and sweets. It is a handy place to pick up a gift or something for yourself.": ["Marwin в Астане — это книги, игрушки, канцтовары и сладости. Здесь можно выбрать подарок или что-нибудь для себя.", "Астанадағы Marwin дүкенінде кітаптар, ойыншықтар, кеңсе тауарлары мен тәттілер бар. Сыйлықты немесе өзіңізге қажет затты таба аласыз."], "Browse the store →": ["Перейти в магазин →", "Дүкенге өту →"], "A little bit": ["Всего понемногу", "Әр нәрседен"], "of everything": ["", "бар"], "Books, toys, stationery and sweets in one place.": ["Книги, игрушки, канцтовары и сладости в одном месте.", "Кітаптар, ойыншықтар, кеңсе тауарлары мен тәттілер бір жерде."], "For everyday needs": ["Для повседневных дел", "Күнделікті қажетке"], "Pick up a notebook, a small gift or a treat.": ["Выберите блокнот, небольшой подарок или сладость.", "Дәптер, шағын сыйлық немесе тәтті таңдаңыз."], "A local store": ["Магазин в Астане", "Астанадағы дүкен"], "Visit us in Astana and take a look around.": ["Заходите к нам в Астане и выбирайте покупки.", "Астанаға келіп, дүкенімізді аралап көріңіз."], "The people behind the project": ["Команда проекта", "Жоба командасы"], "Meet our": ["Наша", "Біздің"], "team": ["команда", "команда"], "We are the team behind the Marwin website.": ["Мы — команда, которая создала сайт Marwin.", "Біз — Marwin сайтын жасаған командамыз."], "Team member": ["Участник команды", "Топ мүшесі"], "Group": ["Группа", "Топ"], "Have a look": ["Загляните", "Қарап көріңіз"], "Find something": ["Найдите что-нибудь", "Өзіңізге бір нәрсе"], "for your day.": ["на каждый день.", "табыңыз."], "Shop all categories →": ["Смотреть все категории →", "Барлық санатты көру →"],
   "Get in touch": ["Свяжитесь с нами", "Бізбен байланысыңыз"], "us": ["", ""], "Have a question about a book? Send us a note.": ["Есть вопрос о товаре? Напишите нам.", "Тауар туралы сұрағыңыз бар ма? Бізге жазыңыз."], "Send a message": ["Отправить сообщение", "Хабарлама жіберу"], "Your name": ["Ваше имя", "Атыңыз"], "Email": ["Электронная почта", "Электрондық пошта"], "Phone": ["Телефон", "Телефон"], "Message": ["Сообщение", "Хабарлама"], "Send message": ["Отправить", "Жіберу"], "Visit the store": ["Наш адрес", "Дүкен мекенжайы"], "Come and": ["Приходите", "Келіңіз"], "have a look.": ["и выбирайте.", "және таңдап алыңыз."], "Address": ["Адрес", "Мекенжай"], "MEGA shopping centre": ["Торговый центр MEGA", "MEGA сауда орталығы"], "Astana, Kazakhstan": ["Астана, Казахстан", "Астана, Қазақстан"], "Opening hours": ["Часы работы", "Жұмыс уақыты"], "Every day": ["Ежедневно", "Күн сайын"], "hello@marwin.kz": ["hello@marwin.kz", "hello@marwin.kz"], "Need a book tip?": ["Нужен совет по выбору?", "Таңдауға кеңес керек пе?"], "Ask us in store.": ["Спросите нас в магазине.", "Дүкенде бізден сұраңыз."],
   "Your Marwin account": ["Ваш аккаунт Marwin", "Marwin аккаунтыңыз"], "Keep your": ["Сохраняйте", "Таңдаулы тауарларды"], "favourite books": ["любимые товары", "бірге"], "close.": ["под рукой.", "сақтаңыз."], "Good reads": ["Хорошие покупки", "Жақсы таңдау"], "start here": ["начинаются здесь", "осы жерден басталады"], "Sign in": ["Войти", "Кіру"], "Sign up": ["Регистрация", "Тіркелу"], "Welcome back": ["С возвращением", "Қайта келгеніңізге қуаныштымыз"], "Sign in to see your saved books.": ["Войдите, чтобы увидеть избранные товары.", "Таңдаулы тауарларды көру үшін кіріңіз."], "Password": ["Пароль", "Құпиясөз"], "Create an account": ["Создать аккаунт", "Аккаунт ашу"], "Save books you want to read later.": ["Сохраняйте товары, которые хотите посмотреть позже.", "Кейін көргіңіз келетін тауарларды сақтаңыз."], "Name": ["Имя", "Аты"], "Demo account details stay in this browser.": ["Данные демо-аккаунта хранятся в этом браузере.", "Демо-аккаунт деректері осы браузерде сақталады."],
@@ -876,7 +876,6 @@ async function loadBooks() {
     const url =
       `https://www.googleapis.com/books/v1/volumes?q=subject:fiction${languageFilter}&maxResults=4&printType=books`;
 
-    let fallback = false;
     let books = [];
 
     try {
@@ -894,53 +893,26 @@ async function loadBooks() {
       });
       if (!books.length) throw new Error("No books returned");
     } catch {
-      fallback = true;
-      const data = await getJson("https://openlibrary.org/search.json?q=fiction&limit=4");
-      books = (data.docs || []).slice(0, 4).map(book => ({
+      const data = await getJson("https://openlibrary.org/search.json?q=subject:fiction&limit=30&fields=title,author_name,cover_i");
+      books = (data.docs || []).filter(book => book.cover_i).slice(0, 4).map(book => ({
         title: book.title || translateText("Untitled book"),
         author: book.author_name ? book.author_name.slice(0, 2).join(", ") : translateText("Unknown author"),
-        image: book.cover_i ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg` : ""
+        image: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
       }));
-      if (!books.length) throw new Error("No books returned");
+      if (books.length < 4) throw new Error("Not enough books with covers");
     }
 
     if (requestId !== booksRequestId) return;
-    const fallbackNote = fallback
-      ? `<p class="api-note">${escapeHTML(translateText("Google Books is unavailable. Showing results from Open Library."))}</p>`
-      : "";
-    section.innerHTML = fallbackNote + '<div class="api-books-grid">' + books.map(book => {
+    section.innerHTML = '<div class="api-books-grid">' + books.map(book => {
       const safeTitle = escapeHTML(book.title);
       const safeAuthor = escapeHTML(book.author);
-      return `<article class="book-card api-book"><div class="cover">${book.image
-        ? `<img class="product-image" src="${escapeHTML(book.image)}" alt="${safeTitle}">`
-        : `<div class="no-image"><strong>${safeTitle}</strong><small>${escapeHTML(translateText("No cover available"))}</small></div>`
-      }</div><div class="book-meta"><div><h3>${safeTitle}</h3><p>${safeAuthor}</p></div></div></article>`;
+      return `<article class="book-card api-book"><div class="cover"><img class="product-image" src="${escapeHTML(book.image)}" alt="${safeTitle}"></div><div class="book-meta"><div><h3>${safeTitle}</h3><p>${safeAuthor}</p></div></div></article>`;
     }).join("") + "</div>";
 
     section.querySelectorAll(".api-book .cover img").forEach(image => {
-      function showCoverFallback() {
-        const fallbackCover = document.createElement("div");
-        fallbackCover.className = "no-image";
-
-        const title = document.createElement("strong");
-        title.textContent = image.alt;
-
-        const note = document.createElement("small");
-        note.textContent = translateText("No cover available");
-
-        fallbackCover.append(title, note);
-        image.replaceWith(fallbackCover);
-      }
-
-      image.addEventListener("error", showCoverFallback, { once: true });
-      image.addEventListener("load", function () {
-        if (image.naturalWidth < 80 || image.naturalHeight < 80) {
-          showCoverFallback();
-        }
+      image.addEventListener("error", function () {
+        image.closest(".api-book").remove();
       }, { once: true });
-      if (image.complete && (image.naturalWidth < 80 || image.naturalHeight < 80)) {
-        showCoverFallback();
-      }
     });
   } catch {
     if (requestId !== booksRequestId) return;
