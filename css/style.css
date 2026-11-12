@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* ==============================
    MARWIN WEBSITE - MAIN STYLES
    ============================== */
@@ -1239,4 +1241,105 @@ textarea {
   .contact-info {
     padding: 0;
   }
+}
+/* Language switch */
+.language-picker {
+  min-height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+/* Use Poppins consistently throughout the site. */
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Keep highlighted headings and captions in Poppins as well. */
+em,
+.art-caption,
+.quote-band p,
+.about-callout h2,
+.book-front i {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.language-picker {
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 64px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 25px 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%2324352c' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
+
+.language-picker:focus {
+  outline: none;
+}
+
+.language-picker:focus-visible {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 2px;
+}
+
+.api-note {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.api-failure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 30px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.api-failure .api-error {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus,
+select:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 3px;
 }

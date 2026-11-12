@@ -22,10 +22,11 @@ LiveServer in VS Code
 ## Main functionality
 - Responsive layouts using CSS Grid and Flexbox.
 - Light/dark theme saved in `localStorage` and shared across pages.
+- English, Russian and Kazakh interface languages saved in `localStorage` and shared across pages.
 - Demo account registration and login using `localStorage`.
 - Client-side validation for required fields, email, phone and password complexity.
 - Product search, category filtering and saved items.
-- Google Books API integration with loading and error states.
+- Google Books API integration with Open Library fallback, loading, error and retry states.
 - Mobile navigation and hover transitions.
 
 ## Important demo limitation
