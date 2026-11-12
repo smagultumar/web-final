@@ -870,37 +870,28 @@ async function loadBooks() {
   }
 
   try {
-    const languageFilter = currentLanguage() === "kk"
-      ? ""
-      : `&langRestrict=${currentLanguage()}`;
-    const url =
-      `https://www.googleapis.com/books/v1/volumes?q=subject:fiction${languageFilter}&maxResults=4&printType=books`;
+    const data = await getJson("https://openlibrary.org/search.json?q=subject:fiction&limit=30&fields=title,author_name,cover_i");
+    const candidates = (data.docs || []).filter(book => book.cover_i).slice(0, 12).map(book => ({
+      title: book.title || translateText("Untitled book"),
+      author: book.author_name ? book.author_name.slice(0, 2).join(", ") : translateText("Unknown author"),
+      image: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
+    }));
 
-    let books = [];
-
-    try {
-      const data = await getJson(url);
-      books = (data.items || []).map(item => {
-        const book = item.volumeInfo || {};
-        const image = book.imageLinks && book.imageLinks.thumbnail
-          ? book.imageLinks.thumbnail.replace("http:", "https:")
-          : "";
-        return {
-          title: book.title || translateText("Untitled book"),
-          author: book.authors ? book.authors.join(", ") : translateText("Unknown author"),
-          image
-        };
-      });
-      if (!books.length) throw new Error("No books returned");
-    } catch {
-      const data = await getJson("https://openlibrary.org/search.json?q=subject:fiction&limit=30&fields=title,author_name,cover_i");
-      books = (data.docs || []).filter(book => book.cover_i).slice(0, 4).map(book => ({
-        title: book.title || translateText("Untitled book"),
-        author: book.author_name ? book.author_name.slice(0, 2).join(", ") : translateText("Unknown author"),
-        image: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
-      }));
-      if (books.length < 4) throw new Error("Not enough books with covers");
-    }
+    const checkedBooks = await Promise.all(candidates.map(book => new Promise(resolve => {
+      const cover = new Image();
+      const timer = window.setTimeout(() => resolve(null), 6000);
+      cover.onload = () => {
+        window.clearTimeout(timer);
+        resolve(cover.naturalWidth >= 80 && cover.naturalHeight >= 80 ? book : null);
+      };
+      cover.onerror = () => {
+        window.clearTimeout(timer);
+        resolve(null);
+      };
+      cover.src = book.image;
+    })));
+    const books = checkedBooks.filter(Boolean).slice(0, 4);
+    if (!books.length) throw new Error("No books with working covers");
 
     if (requestId !== booksRequestId) return;
     section.innerHTML = '<div class="api-books-grid">' + books.map(book => {
