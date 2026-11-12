@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in — Marwin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span
+                class="brand-mark">M</span><span>marwin</span></a><button class="menu-toggle"
+            aria-label="Open menu">☰</button>
+        <nav class="main-nav"><a href="index.html">Home</a><a href="catalog.html">Shop</a><a
+                href="about.html">About</a><a href="contact.html">Contact</a></nav>
+        <div class="header-actions"><button class="theme-toggle" aria-label="Switch colour theme">☾</button><a
+                class="profile-link active" href="profile.html">Profile<span>↗</span></a></div>
+    </header>
+    <main class="auth-main">
+        <section class="auth-art">
+            <p class="eyebrow">Your Marwin account</p>
+            <h1>Keep your<br>favourite books<br><em>close.</em></h1>
+            <div class="auth-book">✳<br><span>Good reads<br>start here</span></div>
+        </section>
+        <section class="auth-card">
+            <div class="auth-tabs"><button class="auth-tab active" data-tab="login">Sign in</button><button
+                    class="auth-tab" data-tab="signup">Sign up</button></div>
+            <form id="login-form" class="auth-form" novalidate>
+                <h2>Welcome back</h2>
+                <p>Sign in to see your saved books.</p><label>Email<input name="email" type="text"
+                        placeholder="name@example.com"></label><label>Password<input name="password" type="password"
+                        placeholder="Password"></label>
+                <p class="form-message" aria-live="polite"></p><button class="button button-dark">Sign in
+                    <span>→</span></button>
+            </form>
+            <form id="signup-form" class="auth-form hidden" novalidate>
+                <h2>Create an account</h2>
+                <p>Save books you want to read later.</p><label>Name<input name="name" type="text"
+                        placeholder="Your name"></label><label>Email<input name="email" type="text"
+                        placeholder="name@example.com"></label><label>Phone<input name="phone" type="text"
+                        placeholder="+7 777 123 45 67"></label><label>Password<input name="password" type="password"
+                        placeholder="At least 8 characters"></label>
+                <p class="form-message" aria-live="polite"></p><button class="button button-dark">Sign up
+                    <span>→</span></button>
+            </form>
+            <p class="auth-privacy">Demo account details stay in this browser.</p>
+        </section>
+    </main>
+    <footer class="site-footer compact-footer"><a class="brand" href="index.html"><span
+                class="brand-mark">M</span><span>marwin</span></a>
+        <div class="footer-links"><a href="catalog.html">Shop</a><a href="contact.html">Contact</a></div><small>© 2026
+            Marwin</small>
+    </footer>
+</body>
+
+</html>

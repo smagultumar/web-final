@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop — Marwin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span
+                class="brand-mark">M</span><span>marwin</span></a><button class="menu-toggle"
+            aria-label="Open menu">☰</button>
+        <nav class="main-nav"><a href="index.html">Home</a><a class="active" href="catalog.html">Shop</a><a
+                href="about.html">About</a><a href="contact.html">Contact</a></nav>
+        <div class="header-actions"><button class="theme-toggle" aria-label="Switch colour theme">☾</button><a
+                class="profile-link" href="profile.html">Profile<span>↗</span></a></div>
+    </header>
+    <main class="page-main">
+        <div class="page-intro">
+            <p class="eyebrow">Books, toys and more</p>
+            <h1>Shop <em>Marwin</em></h1>
+            <p>Browse the store by category, or search for something specific.</p>
+        </div>
+        <section class="catalog-tools"><label class="search-box"><span>⌕</span><input id="book-search" type="text"
+                    placeholder="Search products…" aria-label="Search products"></label>
+            <div id="genre-filters" class="filter-row"><button class="filter-chip selected"
+                    data-genre="All">Everything</button><button class="filter-chip"
+                    data-genre="Books">Books</button><button class="filter-chip" data-genre="Toys">Toys</button><button
+                    class="filter-chip" data-genre="Stationery">Stationery</button><button class="filter-chip"
+                    data-genre="Sweets">Sweets</button></div>
+            <p id="catalog-count" class="result-count"></p>
+        </section>
+        <div id="catalog-grid" class="book-grid catalog-grid"></div>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span
+                class="brand-mark">M</span><span>marwin</span></a>
+        <p>Books, gifts and everyday finds.</p>
+        <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a
+                href="profile.html">Profile</a></div><small>© 2026 Marwin</small>
+    </footer>
+</body>
+
+</html>
