@@ -933,7 +933,14 @@ async function loadBooks() {
       }
 
       image.addEventListener("error", showCoverFallback, { once: true });
-      if (image.complete && image.naturalWidth === 0) showCoverFallback();
+      image.addEventListener("load", function () {
+        if (image.naturalWidth < 80 || image.naturalHeight < 80) {
+          showCoverFallback();
+        }
+      }, { once: true });
+      if (image.complete && (image.naturalWidth < 80 || image.naturalHeight < 80)) {
+        showCoverFallback();
+      }
     });
   } catch {
     if (requestId !== booksRequestId) return;
