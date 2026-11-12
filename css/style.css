@@ -501,9 +501,25 @@ body.dark .button-dark {
 
 .no-image {
   height: 100%;
+  width: 100%;
+  padding: 24px;
   display: grid;
   place-items: center;
+  align-content: center;
+  gap: 12px;
+  background: var(--soft);
   color: var(--muted);
+  text-align: center;
+}
+
+.no-image strong {
+  max-width: 240px;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.no-image small {
+  font-size: .85rem;
 }
 
 .empty-results {

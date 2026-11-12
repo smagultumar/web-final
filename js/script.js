@@ -913,9 +913,28 @@ async function loadBooks() {
       const safeAuthor = escapeHTML(book.author);
       return `<article class="book-card api-book"><div class="cover">${book.image
         ? `<img class="product-image" src="${escapeHTML(book.image)}" alt="${safeTitle}">`
-        : `<div class="no-image">${escapeHTML(translateText("No cover available"))}</div>`
+        : `<div class="no-image"><strong>${safeTitle}</strong><small>${escapeHTML(translateText("No cover available"))}</small></div>`
       }</div><div class="book-meta"><div><h3>${safeTitle}</h3><p>${safeAuthor}</p></div></div></article>`;
     }).join("") + "</div>";
+
+    section.querySelectorAll(".api-book .cover img").forEach(image => {
+      function showCoverFallback() {
+        const fallbackCover = document.createElement("div");
+        fallbackCover.className = "no-image";
+
+        const title = document.createElement("strong");
+        title.textContent = image.alt;
+
+        const note = document.createElement("small");
+        note.textContent = translateText("No cover available");
+
+        fallbackCover.append(title, note);
+        image.replaceWith(fallbackCover);
+      }
+
+      image.addEventListener("error", showCoverFallback, { once: true });
+      if (image.complete && image.naturalWidth === 0) showCoverFallback();
+    });
   } catch {
     if (requestId !== booksRequestId) return;
     section.innerHTML = `<div class="api-failure"><p class="api-error">${escapeHTML(translateText("Could not load books right now. Please try again later."))}</p><button class="button button-outline" id="api-retry">${escapeHTML(translateText("Try again ↻"))}</button></div>`;
