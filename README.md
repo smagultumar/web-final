@@ -17,11 +17,7 @@
 ## Run locally
 Open `index.html` in a browser. For the most reliable API testing, run a local static server from this folder, for example:
 
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
+LiveServer in VS Code
 
 ## Main functionality
 - Responsive layouts using CSS Grid and Flexbox.
