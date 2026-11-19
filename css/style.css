@@ -323,6 +323,12 @@ body.dark .button-dark {
   position: relative;
   display: grid;
   place-items: center;
+  animation: art-fade-in 0.7s ease-out both;
+}
+
+@keyframes art-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .sun-shape {
@@ -344,6 +350,36 @@ body.dark .button-dark {
   border-radius: 5px;
   box-shadow: var(--shadow);
   font-weight: 700;
+  transform-origin: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+@media (hover: hover) {
+  .book-back:hover {
+    z-index: 2;
+    transform: translate(-90px, -42px) rotate(-8deg) scale(1.04);
+    box-shadow: 0 18px 38px rgba(35, 53, 44, 0.2);
+  }
+
+  .book-mid:hover {
+    z-index: 3;
+    transform: translate(-10px, 8px) rotate(5deg) scale(1.05);
+    box-shadow: 0 18px 38px rgba(35, 53, 44, 0.2);
+  }
+
+  .book-front:hover {
+    z-index: 4;
+    transform: translate(80px, -22px) rotate(11deg) scale(1.05);
+    box-shadow: 0 20px 42px rgba(35, 53, 44, 0.24);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-art,
+  .book {
+    animation: none;
+    transition: none;
+  }
 }
 
 .book-back {
